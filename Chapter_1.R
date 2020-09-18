@@ -1,5 +1,9 @@
-bannerCommenter::boxup("Text Mining with R")
-bannerCommenter::banner("Chapter 1") 
+##----------------------------------------------------------------
+##                      Text Mining with R                       -
+##----------------------------------------------------------------
+#################################################################
+##                          Chapter 1                          ##
+#################################################################
 library(janeaustenr)
 library(dplyr)
 library(stringr)
@@ -42,7 +46,10 @@ tidy_books %>%
   coord_flip()
 
 
-bannerCommenter::banner("GutenburgR Package " )
+#################################################################
+##                     GutenburgR Package                      ##
+#################################################################
+
 library(gutenbergr)
 
 hgwells <- gutenberg_download(c(35, 36, 5230, 159))
@@ -80,7 +87,11 @@ tidy_bronte %>%
 
 # Interesting that “time”, “eyes”, and “hand” are in the top 10 for both H.G. Wells and the Brontë sisters.
 
-bannerCommenter::banner("Now, let’s calculate the frequency for each word for the works of Jane Austen, the Brontë sisters, and H.G. Wells by binding the data frames together. We can use spread and gather from tidyr to reshape our dataframe so that it is just what we need for plotting and comparing the three sets of novels.", centre = TRUE)
+####################################################################################################################################################################################################################################################################################################################
+##  Now, let’s calculate the frequency for each word for the works of Jane Austen, the Brontë sisters, and H.G.
+##  Wells by binding the data frames together. We can use spread and gather from tidyr to reshape our dataframe 
+##  so that it is just what we need for plotting and comparing the three sets of novels.  ##
+####################################################################################################################################################################################################################################################################################################################
 
 library(tidyr)
 
